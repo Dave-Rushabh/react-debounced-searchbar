@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "type": "module",
   "main": "./src/main.tsx",
+  "license": "MIT",
+  "description": "The most light-weight and developer friendly debounced search-bar build in React.",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
