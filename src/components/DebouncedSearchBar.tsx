@@ -12,6 +12,7 @@ type DEBOUNCED_SEARCH_BAR_PROPS = {
   iconBgFillColor?: string;
   blurBoxShadow?: string;
   focusBoxShadow?: string;
+  iconsNeeded?: boolean;
 };
 
 const DebouncedSearchBar = ({
@@ -23,6 +24,7 @@ const DebouncedSearchBar = ({
   iconBgFillColor = "#f2f2f2",
   blurBoxShadow = "",
   focusBoxShadow = "",
+  iconsNeeded = true,
 }: DEBOUNCED_SEARCH_BAR_PROPS) => {
   const [value, setValue] = useState<string>("");
   const [isFocused, setIsFocused] = useState<boolean>(false);
@@ -59,24 +61,30 @@ const DebouncedSearchBar = ({
         }}
       />
 
-      {!value.length ? (
-        <div
-          className="react-debounced-search-icon"
-          style={{ backgroundColor: iconBgFillColor }}
-        >
-          <OnSearchIcon />
-        </div>
+      {iconsNeeded ? (
+        <>
+          {!value.length ? (
+            <div
+              className="react-debounced-search-icon"
+              style={{ backgroundColor: iconBgFillColor }}
+            >
+              <OnSearchIcon />
+            </div>
+          ) : (
+            <div
+              className="react-debounced-cross-icon"
+              style={{ backgroundColor: iconBgFillColor }}
+              onClick={() => {
+                setValue("");
+                handleOnChange("");
+              }}
+            >
+              <OnClearIcon />
+            </div>
+          )}
+        </>
       ) : (
-        <div
-          className="react-debounced-cross-icon"
-          style={{ backgroundColor: iconBgFillColor }}
-          onClick={() => {
-            setValue("");
-            handleOnChange("");
-          }}
-        >
-          <OnClearIcon />
-        </div>
+        <></>
       )}
     </div>
   );
