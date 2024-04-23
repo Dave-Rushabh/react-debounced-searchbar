@@ -1,8 +1,8 @@
 {
   "name": "react-debounced-searchbar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
-  "main": "./src/main.tsx",
+  "main": "./src/components/DebouncedSearchBar.tsx",
   "license": "MIT",
   "description": "The most light-weight and developer friendly debounced search-bar build in React.",
   "scripts": {
