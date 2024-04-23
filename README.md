@@ -22,5 +22,4 @@ npm i react-debounced-searchbar
 | **iconBgFillColor** | _Bg filled color for both the icons i.e. search and cross_            | string              | #f2f2f2                  |
 | **blurBoxShadow**   | _Box shadow for the input when input is not focused_                  | string              | Default blur box shadow  |
 | **focusBoxShadow**  | _Box shadow for the input when input is focused_                      | string              | Default focus box shadow |
-| **focusBoxShadow**  | _Box shadow for the input when input is focused_                      | string              | Default focus box shadow |
 | **iconsNeeded**     | _Specify if the search and cross icons are needed_                    | boolean             | true                     |
