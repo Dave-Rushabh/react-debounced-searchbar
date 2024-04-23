@@ -1,6 +1,6 @@
 {
   "name": "react-debounced-searchbar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "main": "./src/components/DebouncedSearchBar.tsx",
   "license": "MIT",
@@ -10,6 +10,10 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dave-Rushabh/react-debounced-searchbar"
   },
   "keywords": [
     "react",
