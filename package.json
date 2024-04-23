@@ -1,6 +1,6 @@
 {
   "name": "react-debounced-searchbar",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "main": "./src/main.tsx",
   "license": "MIT",
